@@ -11,6 +11,7 @@ import {Inter, Space_Grotesk} from 'next/font/google'
 import { Metadata } from 'next'
 
 import './globals.css'
+import { ThemeProvider } from '@/context/ThemeProvider'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -51,15 +52,9 @@ export default function RootLayout({
     }>
       <html lang="en">
         <body className={`${inter.variable} ${SpaceGrotesk.variable}`}>
-
-          <h1 className='h1-bold'>This is some text</h1>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-          {children}
+          <ThemeProvider>    
+            {children}
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>

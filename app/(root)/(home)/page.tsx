@@ -1,9 +1,18 @@
-import { UserButton } from '@clerk/nextjs'
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import React from 'react'
+import { useTheme } from '@/context/ThemeProvider'
 
 function Home() {
   return (
-    <p>Hi</p>
+    <>
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+    </>
+    
   )
 }
 
