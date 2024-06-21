@@ -8,9 +8,6 @@ function Home() {
       <SignedOut>
         <SignInButton />
       </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
     </>
     
   )
