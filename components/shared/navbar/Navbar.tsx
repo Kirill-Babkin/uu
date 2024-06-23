@@ -12,7 +12,7 @@ type Props = {};
 
 function Navbar({}: Props) {
   return (
-    <nav className="flex-between background-light900_dark200 fixed z-50 w-full gap-6 p-3 shadow-light-300 dark:shadow-none sm:px-12">
+    <nav className="flex-between background-light900_dark200 fixed z-50 w-full gap-6 p-3 shadow-light-300 dark:shadow-none sm:px-12 border-b dark:border-none">
       <Link href="/" className="flex items-center gap-1">
         <Image
           className="rounded-full"

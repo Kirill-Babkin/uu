@@ -83,7 +83,7 @@ const SideBarContent = () => {
 
 function LeftSidebar() {
   return (
-    <section className="flex flex-col h-screen custom-scrollbar overflow-y-auto max-lg:w-[120px] lg:w-[266px] w-full background-light800_darkgradient items-start justify-between max-sm:hidden">
+    <section className="flex flex-col h-screen custom-scrollbar overflow-y-auto max-lg:w-[120px] lg:w-[266px] w-full background-light800_darkgradient items-start justify-between max-sm:hidden border-r dark:border-none">
       <SideBarContent />
     </section>
   );
