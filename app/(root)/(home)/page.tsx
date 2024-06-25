@@ -4,7 +4,9 @@ import { useTheme } from "@/context/ThemeProvider";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { LocalSearch } from "@/components/shared/search/LocalSearch";
-import LocalFilter from "@/components/shared/filters/localFilter";
+import LocalFilter from "@/components/shared/filters/LocalFilter";
+import DropdownFilter from "@/components/shared/filters/DropdownFilter";
+import { AnswerFilters, HomePageFilters } from "@/constants/filters";
 
 function Home() {
   return (
@@ -19,12 +21,17 @@ function Home() {
       </div>
 
       <div className="mt-11 flex flex-1 flex-col justify-between gap-5 max-sm:flex-col sm:items-center">
-        <LocalSearch
-          placeholder="Search Questions"
-          otherClasses="flex-1"
-          iconsPosition="left"
-        />
-        <LocalFilter />
+        <div className="w-full flex max-sm:flex-col gap-4">
+          <LocalSearch
+            placeholder="Search Questions"
+            otherClasses="flex-1"
+            iconsPosition="left"
+          />
+          <DropdownFilter options={AnswerFilters}/>
+        </div>
+        <div className="w-full max-lg:hidden">
+          <LocalFilter options={HomePageFilters}/>
+        </div>
       </div>
     </>
   );
