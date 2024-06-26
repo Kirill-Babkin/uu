@@ -13,7 +13,7 @@ type Props = {
 
 const BookCard = ({book}: Props) => {
   return (
-    <Card className="rounded-lg border-none card-wrapper max-w-[325px]">
+    <Card className="rounded-lg border-none card-wrapper max-w-[325px] hover:scale-105 transition-transform">
       <Image src={`https:${book.cover_image}`} alt={book.title} className="rounded-lg" width={325} height={400} />
 
       <CardHeader className="gap-3">
