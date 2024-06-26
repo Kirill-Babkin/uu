@@ -1,4 +1,6 @@
-export const books = [
+import { Book } from "@/types";
+
+export const books: Book[] = [
   {
     author: "Dr. Boris Khaimov",
     cover_image:
@@ -30,7 +32,7 @@ export const books = [
   {
     author: "Dr. Boris Khaimov",
     cover_image:
-      "//06404f6c026725890c67f8fe199bad95.cdn.bubble.io/f1715365947402x169281138960097000/Biological%20Tools%20%284%29.pdf",
+      "//06404f6c026725890c67f8fe199bad95.cdn.bubble.io/f1719423548588x482910048803190500/Biological%20Tools%20%286%29.png",
     link: "",
     order: "4",
     pdf: "//06404f6c026725890c67f8fe199bad95.cdn.bubble.io/f1715365999973x721376809582379800/Pocket%20Guide%20to%20Enhancing%20Mental%20Health%20with%20Spiritual%20Tools%20%281%29.pdf",

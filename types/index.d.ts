@@ -7,6 +7,20 @@ export interface SidebarLink {
   label: string;
 }
 
+export interface Book {
+  author: string;
+  cover_image: string;
+  link: string;
+  order: string;
+  pdf: string;
+  title: string;
+  visible: string;
+  "Creation Date": string;
+  "Modified Date": string;
+  Slug: string;
+  "unique id": string;
+}
+
 export interface Job {
   id?: string;
   employer_name?: string;

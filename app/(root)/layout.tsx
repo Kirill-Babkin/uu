@@ -9,14 +9,14 @@ const Layout = ({children}: {children: React.ReactNode}) => {
       <Navbar />
       <div className='flex'>
         <LeftSidebar />
-        <section className='flex min-h-screen flex-1 flex-col px-6 pb-6 pt-36 max-mb:pb-14 sm:px-14'>
+        <section className='flex min-h-screen flex-1 flex-col px-6 pb-6 pt-36 max-mb:pb-14 sm:px-14 max-lg:ml-[120px] lg:ml-[266px] max-sm:ml-0 2xl:mr-[350px]'>
           <div className='mx-auto w-full max-w-5xl'>
             {children}
           </div>
         </section>
         <RightSidebar />
       </div>
-      {/* Toaster */}
+      Toaster
     </main>
   )
 }

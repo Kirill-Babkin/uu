@@ -12,7 +12,7 @@ const SideBarContent = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex h-full flex-col justify-between pt-28 p-6 w-full">
+    <div className="flex h-full flex-col justify-between pt-28 p-6">
       <div className="flex flex-col gap-4 pb-7">
         {sidebarLinks.map((item) => {
           const isActive =
@@ -83,7 +83,7 @@ const SideBarContent = () => {
 
 function LeftSidebar() {
   return (
-    <section className="flex flex-col h-screen custom-scrollbar overflow-y-auto max-lg:w-[120px] lg:w-[266px] w-full background-light800_darkgradient items-start justify-between max-sm:hidden border-r dark:border-none">
+    <section className="fixed left-0 top-0 h-screen custom-scrollbar overflow-y-auto max-lg:w-[120px] lg:w-[266px] w-full background-light800_dark300 items-start justify-between max-sm:hidden border-r dark:border-none">
       <SideBarContent />
     </section>
   );

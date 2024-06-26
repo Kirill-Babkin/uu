@@ -7,6 +7,10 @@ import { LocalSearch } from "@/components/shared/search/LocalSearch";
 import LocalFilter from "@/components/shared/filters/LocalFilter";
 import DropdownFilter from "@/components/shared/filters/DropdownFilter";
 import { AnswerFilters, HomePageFilters } from "@/constants/filters";
+import QuestionCard from "@/components/shared/QuestionCard";
+import { Book } from "lucide-react";
+import BookCard from "@/components/shared/BookCard";
+import { books } from "@/database/books-stubs";
 
 function Home() {
   return (
@@ -32,6 +36,20 @@ function Home() {
         <div className="w-full max-lg:hidden">
           <LocalFilter options={HomePageFilters}/>
         </div>
+      </div>
+
+      <div className="mt-10 gap-6 flex flex-row flex-wrap w-full max-md:justify-center">
+        {books.sort((bookA, bookB) => +bookA.order - +bookB.order ).map((book) => (
+          <BookCard book={book} key={book["unique id"]} />
+
+        ))}
+      </div>
+
+      <div className="mt-10 gap-6 flex flex-col w-full">
+        <QuestionCard />
+        <QuestionCard />
+        <QuestionCard />
+        <QuestionCard />
       </div>
     </>
   );
