@@ -164,3 +164,226 @@ code {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.mdxeditor {
+  border-radius: 0.375rem;
+  /* border: 1px solid #e5e7eb; */
+  overflow: hidden;
+
+}
+
+.mdxeditor ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.mdxeditor ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
+.mdxeditor-diff-source-wrapper {
+  --text-color: #333;
+  --bg-color: #fff;
+  --quote-bg: #f9f9f9;
+  --quote-border: #ccc;
+
+  
+}
+
+/* Dark theme */
+.mdxeditor-diff-source-wrapper.dark-theme {
+  --text-color: #e0e0e0;
+  --bg-color: #1e1e1e;
+  --quote-bg: #2a2a2a;
+  --quote-border: #4a4a4a;
+}
+
+/* Apply theme colors */
+.mdxeditor-diff-source-wrapper {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.mdxeditor-diff-source-wrapper h1,
+.mdxeditor-diff-source-wrapper h2,
+.mdxeditor-diff-source-wrapper h3,
+.mdxeditor-diff-source-wrapper h4,
+.mdxeditor-diff-source-wrapper h5,
+.mdxeditor-diff-source-wrapper h6 {
+  color: var(--text-color);
+}
+
+.mdxeditor-diff-source-wrapper h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.mdxeditor-diff-source-wrapper h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.mdxeditor-diff-source-wrapper h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.mdxeditor-diff-source-wrapper h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.mdxeditor-diff-source-wrapper h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+}
+
+.mdxeditor-diff-source-wrapper h6 {
+  font-size: 0.67em;
+  font-weight: bold;
+}
+
+.mdxeditor-diff-source-wrapper p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.mdxeditor-diff-source-wrapper blockquote {
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-left: 4px solid var(--quote-border);
+  background-color: var(--quote-bg);
+}
+
+.dark-theme .mdxeditor-toolbar {
+  background-color: red !important;
+  color: var(--text-color);
+}
+
+/* Light theme variables */
+.mdxeditor-root-contenteditable {
+  --text-color: #333;
+  --bg-color: #fff;
+  --quote-bg: #f9f9f9;
+  --quote-border: #ccc;
+  --toolbar-bg: #81a0cd;
+
+  min-height: 200px !important;
+
+}
+
+/* Dark theme variables */
+.dark .mdxeditor-root-contenteditable {
+  --text-color: #e0e0e0;
+  --bg-color: #151821;
+  --quote-bg: #2a2a2a;
+  --quote-border: #4a4a4a;
+  --toolbar-bg: #242C38;
+}
+
+/* Apply theme colors */
+.mdxeditor-root-contenteditable {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.mdxeditor-root-contenteditable h1,
+.mdxeditor-root-contenteditable h2,
+.mdxeditor-root-contenteditable h3,
+.mdxeditor-root-contenteditable h4,
+.mdxeditor-root-contenteditable h5,
+.mdxeditor-root-contenteditable h6 {
+  color: var(--text-color);
+}
+
+.mdxeditor-root-contenteditable div {
+  color: var(--text-color) !important;
+}
+
+.mdxeditor-root-contenteditable blockquote {
+  border-left: 4px solid var(--quote-border);
+  background-color: var(--quote-bg);
+}
+
+.mdxeditor-toolbar  {
+  --text-color: #333;
+  --toolbar-bg: #F4F6F8;
+  padding: 0.75rem !important;
+}
+
+.dark .mdxeditor-toolbar {
+  --text-color: #e0e0e0;
+  --toolbar-bg: #242C38;
+}
+
+.mdxeditor-toolbar {
+  color: var(--text-color) !important;
+  background-color: var(--toolbar-bg) !important;
+  border-radius: 0.375rem 0.375rem 0 0 !important;
+}
+
+.mdxeditor-toolbar button {
+  color: var(--text-color) !important;
+  background: var(--toolbar-bg) !important;
+}
+
+.mdxeditor-toolbar svg {
+  color: var(--text-color) !important;
+  /* background: var(--text-color) !important; */
+}
+
+.mdxeditor-toolbar button:hover {
+  /* color: #ff7000 !important; */
+  background: #ff7000 !important;
+}
+
+.mdxeditor-select-content  {
+  --text-color: #333;
+  --toolbar-bg: #F4F6F8;
+  
+}
+
+.dark .mdxeditor-select-content {
+  --text-color: #e0e0e0;
+  --toolbar-bg: #242C38;
+}
+
+.mdxeditor-select-content {
+  color: var(--text-color) !important;
+  background-color: var(--toolbar-bg) !important;
+}
+
+.mdxeditor-select-content button:hover {
+  color: var(--text-color) !important;
+  background-color: var(--toolbar-bg) !important;
+}
+
+.mdxeditor-select-content ._selectItem_yms4a_300[data-highlighted] {
+  color: #ff7000 !important;
+  background-color: var(--toolbar-bg) !important;
+}
+
+.mdxeditor-select-content ._selectItem_yms4a_300[data-state=checked] {
+  color: #ff7000 !important;
+  background-color: var(--toolbar-bg) !important;
+}
+
+.mdxeditor-rich-text-editor {
+  --bg-color: #fff;
+}
+
+.dark .mdxeditor-rich-text-editor {
+  --bg-color: #151821;
+}
+
+.mdxeditor-rich-text-editor {
+  background-color: var(--bg-color) !important;
+}
+
+.mdxeditor-rich-text-editor div[aria-label="editable markdown"] {
+  min-height: 200px !important;
+}

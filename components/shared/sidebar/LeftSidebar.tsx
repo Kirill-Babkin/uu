@@ -15,7 +15,6 @@ const SideBarContent = () => {
     <div className="flex h-full flex-col justify-between pt-28 p-6">
       <div className="flex flex-col gap-4 pb-7">
         {sidebarLinks.map((item) => {
-          console.log(item.route, pathname, pathname.match(item.route));
           const isActive = (pathname.includes(item.route) && item.route !== "/") || pathname === item.route;
 
           return (
